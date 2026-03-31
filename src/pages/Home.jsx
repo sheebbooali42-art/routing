@@ -2,6 +2,7 @@
 import { FaPlay, FaSearch } from "react-icons/fa";
 
 export default function Home() {
+  
   return (
     <>
         <section className="relative h-[85vh] mt-5 flex items-center text-white bg-gray-900">
@@ -42,6 +43,8 @@ export default function Home() {
             <FaPlay /> Watch Now
           </button>
         </div>
+
+
       </div>
     </section>
     </>
