@@ -1,30 +1,42 @@
- import React, { useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes, FaSearch, FaUserCircle } from "react-icons/fa";
 import { MdHome, MdMovie } from "react-icons/md";
+import { Link } from "react-router-dom";
+
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-900 text-white shadow-lg">
+    <header className="bg-[green] text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
 
         {/* Logo */}
         <h1 className="text-2xl font-bold text-yellow-400">
-          MovieApp 🎬
+          Movies 🎬
         </h1>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-6">
 
-          <a href="#" className="flex items-center gap-1 hover:text-yellow-400">
+          <Link to="/" className="flex items-center gap-1 hover:text-red-400">
             <MdHome /> Home
-          </a>
+          </Link>
 
-          <a href="#" className="flex items-center gap-1 hover:text-yellow-400">
-            <MdMovie /> Movies
-          </a>
+          <Link to="/about" className="flex items-center gap-1 hover:text-red-400">
+            <MdMovie /> About
+          </Link>
 
+
+          <Link to="/contact" className="flex items-center gap-1 hover:text-red-400">
+            <MdMovie /> Contact
+          </Link>
+
+          
+          <Link to="/services" className="flex items-center gap-1 hover:text-red-400">
+            <MdMovie /> Services
+          </Link>
           {/* Search */}
           <div className="flex items-center bg-gray-800 px-2 py-1 rounded-lg">
             <FaSearch className="text-gray-400" />
@@ -52,13 +64,13 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-gray-800 px-4 pb-4">
 
-          <a href="#" className="flex items-center gap-2 py-2">
+          <Link to ="#" className="flex items-center gap-2 py-2">
             <MdHome /> Home
-          </a>
+          </Link>
 
-          <a href="#" className="flex items-center gap-2 py-2">
+          <Link to ="#" className="flex items-center gap-2 py-2">
             <MdMovie /> Movies
-          </a>
+          </Link>
 
           {/* Mobile Search */}
           <div className="flex items-center bg-gray-700 px-2 py-1 rounded-lg mt-2">

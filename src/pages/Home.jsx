@@ -1,12 +1,10 @@
  import React from "react";
 import { FaPlay, FaSearch } from "react-icons/fa";
-import Footer from "../componants/Footer";
 
 export default function Home() {
   return (
     <>
-    <Header/>
-        <section className="relative h-[85vh] flex items-center text-white bg-gray-900">
+        <section className="relative h-[85vh] mt-5 flex items-center text-white bg-gray-900">
 
       {/* Background */}
       <img
@@ -46,7 +44,6 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <Footer/>
     </>
 
   );

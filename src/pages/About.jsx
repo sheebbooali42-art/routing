@@ -1,10 +1,10 @@
  import React from "react";
 import { FaInfoCircle } from "react-icons/fa";
 
-export default function AboutHero() {
+export default function About() {
   return (
-    
-    <section className="bg-gray-900 text-white py-20">
+    <>
+    <section className="bg-gray-900 mt-10  text-white py-20">
 
       <div className="max-w-7xl mx-auto px-4 text-center">
         
@@ -23,5 +23,6 @@ export default function AboutHero() {
       </div>
 
     </section>
+    </>
   );
 }
