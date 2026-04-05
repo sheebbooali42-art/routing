@@ -77,6 +77,7 @@ export default function Header() {
             <FaSearch />
             <input
               type="text"
+        
               placeholder="Search..."
               className="bg-transparent outline-none px-2 w-full"
             />

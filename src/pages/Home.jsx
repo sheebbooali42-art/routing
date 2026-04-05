@@ -1,6 +1,7 @@
  import React from "react";
 import { FaPlay, FaSearch } from "react-icons/fa";
 
+
 export default function Home() {
   
   return (

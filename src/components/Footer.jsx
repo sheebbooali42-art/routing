@@ -6,18 +6,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300 mt-10">
       
       <div className="max-w-7xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6">
-        
-        {/* Logo / About */}
-        {/* <div>
-          <h1 className="text-xl font-bold text-yellow-400 mb-2">
-            MovieApp 🎬
-          </h1>
-          <p className="text-sm">
-            Discover the latest movies, ratings, and trending shows all in one place.
-          </p>
-        </div> */}
-
-        {/* Links */}
+      
         <div>
           <h2 className="text-lg font-semibold text-white mb-2">Quick Links</h2>
           <ul className="space-y-2">
@@ -38,6 +27,8 @@ export default function Footer() {
             <FaFacebook className="hover:text-yellow-400 cursor-pointer" />
           </div>
         </div>
+ 
+
       </div>
 
       {/* Bottom */}

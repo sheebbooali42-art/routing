@@ -5,14 +5,12 @@ import Contact from './pages/Contact'
 import Services from './pages/Services'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './pages/Layout'
-// import Header from './components/header'
-// import Footer from './components/Footer'
-
 
 export default function App() {
-    const router=createBrowserRouter([
+    const router = createBrowserRouter([
         {
             path:"/",
+
             element :<Layout />,
             children:[
                 {
